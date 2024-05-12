@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("map:")
+	fmt.Println("pointer:")
 	var s int = 10
 	var t *int = &s // pointer to s
 

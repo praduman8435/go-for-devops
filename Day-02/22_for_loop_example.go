@@ -7,15 +7,21 @@ import (
 func main() {
 	fmt.Println("Basic for Loop:")
 	for i := 0; i < 5; i++ {
-		fmt.Println(i)
+		// fmt.Println(i)
+		fmt.Printf("%d ",i)
 	}
+	fmt.Println("\n")
 
 	fmt.Println("for as a while Loop:")
 	i := 0
 	for i < 5 {
-		fmt.Println(i)
+		// fmt.Println(i)
+		fmt.Printf("%d ",i)
 		i++
 	}
+	fmt.Println("\n")
+
+
 
 	fmt.Println("Infinite for Loop:")
 	j := 0
@@ -24,9 +30,10 @@ func main() {
 		if j > 100 {
 			break // break out of the loop
 		}
-		fmt.Println(j)
+		fmt.Printf("%v ",j)
 		j++
 	}
+	fmt.Println("\n")
 
 	fmt.Println("for Loop with range (for slices, arrays, maps, strings):")
 	nums := []int{1, 2, 3, 4, 5}
@@ -35,8 +42,8 @@ func main() {
 	}
 
 	fmt.Println("for Loop with range (for strings):")
-	for index, runeValue := range "hello" {
-		fmt.Printf("Index: %d, Rune: %c\n", index, runeValue)
+	for index, runei := range "hello" {
+		fmt.Printf("Index: %d, Rune: %c\n", index, runei)
 	}
 
 }
